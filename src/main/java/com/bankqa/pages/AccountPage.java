@@ -20,71 +20,79 @@ public class AccountPage extends TestBase  {
 	        @FindBy(xpath = "//div[@class='borderM box padT20 ng-scope']//div//strong//span")
 	        WebElement userName;
 	        
-	    //Deposit elements
-			@FindBy(xpath = "(//button[contains(.,'Deposit')])[1]")
-			WebElement depositTab;
+	    // for Deposit function
+			@FindBy(xpath = "(//button[@class='btn btn-lg tab'])[2]")
+			WebElement DepositTab;
 	
 			@FindBy(xpath = "//input[@placeholder='amount']")
-			WebElement depositamountField;
+			WebElement depositamount;
 			
 			@FindBy(xpath = "(//button[contains(.,'Deposit')])[2]")
-			WebElement depositButton;
+			WebElement depositBtn;
 			
 			@FindBy(xpath = "//span[contains(.,'Deposit Successful')]")
-			WebElement depositSuccessMsg;
+			WebElement depositMsg;
 			
-		//Withdrawl elements	
+		//For Withdraw function
 			@FindBy(xpath = "//button[contains(.,'Withdrawl')]")
 			WebElement withdrawlTab;
 			
 			@FindBy(xpath = "//input[@placeholder='amount']")
-			WebElement withdrawlAmountField;
+			WebElement withdrawlAmount;
 			
 			@FindBy(xpath = "(//button[contains(.,'Withdraw')])[2]")
-			WebElement withdrawlButton;
+			WebElement withdrawlBtn;
 					
-			@FindBy(xpath = "//span[contains(.,'Transaction successful')]")
-			WebElement withdrawlSuccessMsg;
+			@FindBy(xpath = "//span[contains(text(),'Transaction successful')]")
+			WebElement withdrawlMsg;
 			
 			public String getUserName()
 			{
 				return userName.getText();
 			}
 			
-		//Deposit Actions	
+		//Actions for deposit function 	
+			//click on deposit tab
 			public void clickDepositTab()
 			{
-				depositTab.click();
+				DepositTab.click();
 			}
+			//enter amount for deposit
 			public void enterDepositAmount(String amount)
 			{
-				depositamountField.sendKeys(amount);
+				depositamount.sendKeys(amount);
 			}
+			// click on deposit button
 			public void clickDepositButton()
 			{
-				depositButton.click();
+				depositBtn.click();
 			}
+			
 			public String getDepositSuccessMSG()
 			{
-				return depositSuccessMsg.getText();
+				return depositMsg.getText();
 			}	
 			
-	   //Withdrawl Actions		
+	   //Actions for Withdrawl function	
+			//click on withdraw tab
 			public void clickWithdrawlTab()
 			{
 				withdrawlTab.click();
 			}
+			//enter amount
 			public void enterWithdrawlAmount(String amount)
 			{
-				withdrawlAmountField.sendKeys(amount);
+				withdrawlAmount.sendKeys(amount);
 			}
+			//click on withdraw button
 			public void clickWithdrawlButton()
 			{
-				withdrawlButton.click();
+				withdrawlBtn.click();
 			}
+			
 			public String getWithdarwlSuccessMSG()
 			{
-				return withdrawlSuccessMsg.getText();
+				return withdrawlMsg.getText();
 			}	
 
 }

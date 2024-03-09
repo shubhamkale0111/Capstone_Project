@@ -31,12 +31,17 @@ public class AddCustomerTest extends TestBase {
 
 	@Test
 	public void verifyManagerLogin() throws Exception {
+		
 		homePage.managerLoginBtn();
+		
 		manager.clickaddCustomerTab();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		addCustomer.enterFName(prop.getProperty("fname"));
-		addCustomer.enterLName(prop.getProperty("lname"));
-		addCustomer.enterPCode(prop.getProperty("zip"));
+		
+		addCustomer.enterFName(prop.getProperty("FirstName"));
+		addCustomer.enterLName(prop.getProperty("LastName"));
+		addCustomer.enterPCode(prop.getProperty("Postcode"));
+		
 		addCustomer.clickaddCustBtn();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String alertMsg = addCustomer.acceptAlert();

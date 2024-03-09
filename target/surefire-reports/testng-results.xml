@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-08T10:57:48 IST" name="Surefire suite" finished-at="2024-03-08T10:58:15 IST" duration-ms="26646">
+  <suite started-at="2024-03-08T16:25:20 IST" name="Surefire suite" finished-at="2024-03-08T16:25:58 IST" duration-ms="37313">
     <groups>
     </groups>
-    <test started-at="2024-03-08T10:57:48 IST" name="Surefire test" finished-at="2024-03-08T10:58:15 IST" duration-ms="26646">
-      <class name="com.bank.qa.testcases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.HomePageTest@2525ff7e]" started-at="2024-03-08T10:58:01 IST" name="setup" finished-at="2024-03-08T10:58:05 IST" duration-ms="4045" status="PASS">
+    <test started-at="2024-03-08T16:25:20 IST" name="Surefire test" finished-at="2024-03-08T16:25:58 IST" duration-ms="37313">
+      <class name="com.bank.qa.testcases.depositPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.depositPageTest@152aa092]" started-at="2024-03-08T16:25:29 IST" name="setup" finished-at="2024-03-08T16:25:32 IST" duration-ms="2448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageTest()[pri:1, instance:com.bank.qa.testcases.HomePageTest@2525ff7e]" started-at="2024-03-08T10:58:05 IST" name="homePageTest" finished-at="2024-03-08T10:58:06 IST" duration-ms="648" status="PASS">
+        <test-method signature="DepositMoney()[pri:0, instance:com.bank.qa.testcases.depositPageTest@152aa092]" started-at="2024-03-08T16:25:32 IST" name="DepositMoney" finished-at="2024-03-08T16:25:34 IST" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositMoney -->
+      </class> <!-- com.bank.qa.testcases.depositPageTest -->
+      <class name="com.bank.qa.testcases.WithdrawTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.WithdrawTest@37858383]" started-at="2024-03-08T16:25:51 IST" name="setup" finished-at="2024-03-08T16:25:55 IST" duration-ms="4818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DepositMoney()[pri:0, instance:com.bank.qa.testcases.WithdrawTest@37858383]" started-at="2024-03-08T16:25:55 IST" name="DepositMoney" finished-at="2024-03-08T16:25:58 IST" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositMoney -->
+      </class> <!-- com.bank.qa.testcases.WithdrawTest -->
+      <class name="com.bank.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.HomePageTest@44a7bfbc]" started-at="2024-03-08T16:25:34 IST" name="setup" finished-at="2024-03-08T16:25:37 IST" duration-ms="2470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTest()[pri:1, instance:com.bank.qa.testcases.HomePageTest@44a7bfbc]" started-at="2024-03-08T16:25:37 IST" name="homePageTest" finished-at="2024-03-08T16:25:40 IST" duration-ms="2940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTest -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.bank.qa.testcases.HomePageTest@2525ff7e]" started-at="2024-03-08T10:58:06 IST" name="teardownBrowser" finished-at="2024-03-08T10:58:06 IST" duration-ms="149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownBrowser -->
       </class> <!-- com.bank.qa.testcases.HomePageTest -->
       <class name="com.bank.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@524d6d96]" started-at="2024-03-08T10:58:06 IST" name="setup" finished-at="2024-03-08T10:58:09 IST" duration-ms="2933" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@4ef37659]" started-at="2024-03-08T16:25:40 IST" name="setup" finished-at="2024-03-08T16:25:43 IST" duration-ms="3171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@524d6d96]" started-at="2024-03-08T10:58:09 IST" name="verifyLogin" finished-at="2024-03-08T10:58:11 IST" duration-ms="1786" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@4ef37659]" started-at="2024-03-08T16:25:43 IST" name="verifyLogin" finished-at="2024-03-08T16:25:45 IST" duration-ms="2231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@524d6d96]" started-at="2024-03-08T10:58:11 IST" name="teardownBrowser" finished-at="2024-03-08T10:58:11 IST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownBrowser -->
       </class> <!-- com.bank.qa.testcases.LoginPageTest -->
       <class name="com.bank.qa.testcases.OpenAccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.OpenAccountTest@152aa092]" started-at="2024-03-08T10:58:11 IST" name="setup" finished-at="2024-03-08T10:58:13 IST" duration-ms="2012" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.OpenAccountTest@776b83cc]" started-at="2024-03-08T16:25:45 IST" name="setup" finished-at="2024-03-08T16:25:49 IST" duration-ms="3588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createAccount()[pri:3, instance:com.bank.qa.testcases.OpenAccountTest@152aa092]" started-at="2024-03-08T10:58:13 IST" name="createAccount" finished-at="2024-03-08T10:58:15 IST" duration-ms="1873" status="PASS">
+        <test-method signature="createAccount()[pri:3, instance:com.bank.qa.testcases.OpenAccountTest@776b83cc]" started-at="2024-03-08T16:25:49 IST" name="createAccount" finished-at="2024-03-08T16:25:51 IST" duration-ms="2019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.bank.qa.testcases.OpenAccountTest@152aa092]" started-at="2024-03-08T10:58:15 IST" name="teardownBrowser" finished-at="2024-03-08T10:58:15 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownBrowser -->
       </class> <!-- com.bank.qa.testcases.OpenAccountTest -->
       <class name="com.bank.qa.testcases.CustomerslistTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@61d6015a]" started-at="2024-03-08T10:57:55 IST" name="setup" finished-at="2024-03-08T10:58:00 IST" duration-ms="4209" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@524d6d96]" started-at="2024-03-08T16:25:25 IST" name="setup" finished-at="2024-03-08T16:25:27 IST" duration-ms="2390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearch()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@61d6015a]" started-at="2024-03-08T10:58:00 IST" name="verifySearch" finished-at="2024-03-08T10:58:01 IST" duration-ms="1461" status="PASS">
+        <test-method signature="verifySearch()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@524d6d96]" started-at="2024-03-08T16:25:27 IST" name="verifySearch" finished-at="2024-03-08T16:25:29 IST" duration-ms="1685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@61d6015a]" started-at="2024-03-08T10:58:01 IST" name="teardownBrowser" finished-at="2024-03-08T10:58:01 IST" duration-ms="167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownBrowser -->
       </class> <!-- com.bank.qa.testcases.CustomerslistTest -->
       <class name="com.bank.qa.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@68567e20]" started-at="2024-03-08T10:57:48 IST" name="setup" finished-at="2024-03-08T10:57:54 IST" duration-ms="5128" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@11fc564b]" started-at="2024-03-08T16:25:20 IST" name="setup" finished-at="2024-03-08T16:25:23 IST" duration-ms="2838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyManagerLogin()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@68567e20]" started-at="2024-03-08T10:57:54 IST" name="verifyManagerLogin" finished-at="2024-03-08T10:57:55 IST" duration-ms="1624" status="PASS">
+        <test-method signature="verifyManagerLogin()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@11fc564b]" started-at="2024-03-08T16:25:23 IST" name="verifyManagerLogin" finished-at="2024-03-08T16:25:25 IST" duration-ms="1726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyManagerLogin -->
-        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@68567e20]" started-at="2024-03-08T10:57:55 IST" name="teardownBrowser" finished-at="2024-03-08T10:57:55 IST" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownBrowser -->
       </class> <!-- com.bank.qa.testcases.AddCustomerTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

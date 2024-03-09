@@ -17,30 +17,30 @@ public class AddCustomerPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	// elements
+	
 	@FindBy(xpath = "//input[@placeholder='First Name']")
-	WebElement firstNameField;
+	WebElement firstName;
 
 	@FindBy(xpath = "//input[@placeholder='Last Name']")
-	WebElement lastnameField;
+	WebElement lastname;
 
 	@FindBy(xpath = "//input[@placeholder='Post Code']")
-	WebElement postCodeField;
+	WebElement postCode;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement addCustomerBtn;
 
 	// Actions
 	public void enterFName(String fName) {
-		firstNameField.sendKeys(fName);
+		firstName.sendKeys(fName);
 	}
 
 	public void enterLName(String lName) {
-		lastnameField.sendKeys(lName);
+		lastname.sendKeys(lName);
 	}
 
 	public void enterPCode(String code) {
-		postCodeField.sendKeys(code);
+		postCode.sendKeys(code);
 	}
 
 	public void clickaddCustBtn() {
