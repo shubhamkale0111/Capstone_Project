@@ -2,6 +2,7 @@ package com.bank.qa.testcases;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,13 +29,25 @@ public class OpenAccountTest extends TestBase {
 
 	@Test(priority = 3)
 	public void createAccount() throws Exception {
+		
 		manager = homePage.managerLoginBtn();
+		
 		openAccount = manager.clickopenAccountTab();
+		
 		openAccount.selectCustomer();
+		
 		openAccount.selectCurrency();
+		
 		openAccount.clickProcessBtn();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 		String alertmsg = openAccount.acceptAlert();
 		System.out.println(alertmsg);
 	}
+	// close browser after complete of operation
+		@AfterMethod
+		public void closebrowse() {
+			driver.quit();
+		}
 }

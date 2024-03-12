@@ -15,7 +15,7 @@ public class CustomerslistPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	//elements
+
 	@FindBy(xpath = "//input[@placeholder='Search Customer']")
 	WebElement searchField;
 	
@@ -23,7 +23,7 @@ public class CustomerslistPage extends TestBase {
 	WebElement firstlistedName;
 	
 	
-	//Actions
+	
 	public void search(String name)
 	{
 		searchField.sendKeys(name);

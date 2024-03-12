@@ -16,7 +16,7 @@ public class HomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	//elements
+
 	@FindBy(xpath = "//button[contains(.,'Customer Login')]")
 	WebElement customerlogin;
 
@@ -27,7 +27,7 @@ public class HomePage extends TestBase {
 	WebElement logo;
 	
 	
-	//Actions   
+   
 	public String verifyLogoText()
 	{
 		return logo.getText();

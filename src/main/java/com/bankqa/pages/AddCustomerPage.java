@@ -22,7 +22,7 @@ public class AddCustomerPage extends TestBase {
 	WebElement firstName;
 
 	@FindBy(xpath = "//input[@placeholder='Last Name']")
-	WebElement lastname;
+	WebElement lastName;
 
 	@FindBy(xpath = "//input[@placeholder='Post Code']")
 	WebElement postCode;
@@ -30,17 +30,17 @@ public class AddCustomerPage extends TestBase {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement addCustomerBtn;
 
-	// Actions
-	public void enterFName(String fName) {
-		firstName.sendKeys(fName);
+	
+	public void EnterFirstName(String FirstName) {
+		firstName.sendKeys(FirstName);
 	}
 
-	public void enterLName(String lName) {
-		lastname.sendKeys(lName);
+	public void EnterLastName(String LastName) {
+		lastName.sendKeys(LastName);
 	}
 
-	public void enterPCode(String code) {
-		postCode.sendKeys(code);
+	public void EnterPostCode(String Postcode) {
+		postCode.sendKeys(Postcode);
 	}
 
 	public void clickaddCustBtn() {

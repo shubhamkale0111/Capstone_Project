@@ -17,14 +17,13 @@ public class CustomerLoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	// elements
 	@FindBy(xpath = "//select[@id='userSelect']")
 	WebElement YourNameDropdown;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginBtn;
 
-	// Actions
+
 	public String selectUser() {
 		Select sc = new Select(YourNameDropdown);
 		sc.selectByIndex(1);
@@ -33,10 +32,10 @@ public class CustomerLoginPage extends TestBase {
 		return selecteduser;
 	}
 
-	public AccountPage clickloginbtn() throws Exception {
+	public deposite_withdraw clickloginbtn() throws Exception {
 		loginBtn.click();
 
-		return new AccountPage();
+		return new deposite_withdraw();
 	}
 }
 

@@ -10,10 +10,10 @@ import com.bank.qa.base.TestBase;
 
 
 
-public class AccountPage extends TestBase  {
+public class deposite_withdraw extends TestBase  {
 
 	
-	public AccountPage() throws IOException {
+	public deposite_withdraw() throws IOException {
 		PageFactory.initElements(driver, this);
 	} 
 	

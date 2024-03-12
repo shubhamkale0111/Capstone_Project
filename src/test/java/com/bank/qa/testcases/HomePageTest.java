@@ -3,6 +3,7 @@ package com.bank.qa.testcases;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -23,13 +24,23 @@ public class HomePageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void homePageTest() throws InterruptedException {
+		
 		String explogo = homePage.verifyLogoText();
 		Assert.assertEquals(explogo, "XYZ Bank", "Expected logo text is not present");
+		
 		String expTitle = homePage.getPageTitle();
 		Assert.assertEquals(expTitle, "XYZ Bank", "Expected title is not present");
+		
 		String actUrl = homePage.getPageURL();
+		
 		Assert.assertEquals(actUrl, "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
 				"Expected url is not present");
 		System.out.println(actUrl);
 	}
+	
+	// close browser after complete of operation
+		@AfterMethod
+		public void closebrowse() {
+			driver.quit();
+		}
 }

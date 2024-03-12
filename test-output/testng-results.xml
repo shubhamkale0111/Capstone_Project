@@ -1,21 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-09T03:49:23Z" name="Default suite" finished-at="2024-03-09T03:49:36Z" duration-ms="13526">
+  <suite started-at="2024-03-10T09:20:17Z" name="Suite" finished-at="2024-03-10T09:21:01Z" duration-ms="44410">
     <groups>
     </groups>
-    <test started-at="2024-03-09T03:49:23Z" name="Default test" finished-at="2024-03-09T03:49:36Z" duration-ms="13526">
-      <class name="com.bank.qa.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@401f7633]" started-at="2024-03-09T09:19:23Z" name="setup" finished-at="2024-03-09T09:19:34Z" duration-ms="11108" status="PASS">
+    <test started-at="2024-03-10T09:20:17Z" name="Test" finished-at="2024-03-10T09:21:01Z" duration-ms="44410">
+      <class name="com.bank.qa.testcases.depositPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.depositPageTest@2beee7ff]" started-at="2024-03-10T14:50:28Z" name="setup" finished-at="2024-03-10T14:50:32Z" duration-ms="3500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyManagerLogin()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@401f7633]" started-at="2024-03-09T09:19:34Z" name="verifyManagerLogin" finished-at="2024-03-09T09:19:36Z" duration-ms="2398" status="PASS">
+        <test-method signature="DepositMoney()[pri:0, instance:com.bank.qa.testcases.depositPageTest@2beee7ff]" started-at="2024-03-10T14:50:32Z" name="DepositMoney" finished-at="2024-03-10T14:50:35Z" duration-ms="3523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositMoney -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.depositPageTest@2beee7ff]" started-at="2024-03-10T14:50:35Z" name="closebrowse" finished-at="2024-03-10T14:50:36Z" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
+      </class> <!-- com.bank.qa.testcases.depositPageTest -->
+      <class name="com.bank.qa.testcases.WithdrawTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.WithdrawTest@5136d012]" started-at="2024-03-10T14:50:36Z" name="setup" finished-at="2024-03-10T14:50:38Z" duration-ms="2371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DepositMoney()[pri:0, instance:com.bank.qa.testcases.WithdrawTest@5136d012]" started-at="2024-03-10T14:50:38Z" name="DepositMoney" finished-at="2024-03-10T14:50:41Z" duration-ms="3083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositMoney -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.WithdrawTest@5136d012]" started-at="2024-03-10T14:50:41Z" name="closebrowse" finished-at="2024-03-10T14:50:41Z" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
+      </class> <!-- com.bank.qa.testcases.WithdrawTest -->
+      <class name="com.bank.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.HomePageTest@1bb266b3]" started-at="2024-03-10T14:50:53Z" name="setup" finished-at="2024-03-10T14:50:56Z" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTest()[pri:1, instance:com.bank.qa.testcases.HomePageTest@1bb266b3]" started-at="2024-03-10T14:50:56Z" name="homePageTest" finished-at="2024-03-10T14:50:56Z" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.HomePageTest@1bb266b3]" started-at="2024-03-10T14:50:56Z" name="closebrowse" finished-at="2024-03-10T14:50:56Z" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
+      </class> <!-- com.bank.qa.testcases.HomePageTest -->
+      <class name="com.bank.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@306cf3ea]" started-at="2024-03-10T14:50:17Z" name="setup" finished-at="2024-03-10T14:50:24Z" duration-ms="7316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@306cf3ea]" started-at="2024-03-10T14:50:24Z" name="verifyLogin" finished-at="2024-03-10T14:50:28Z" duration-ms="4332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.LoginPageTest@306cf3ea]" started-at="2024-03-10T14:50:28Z" name="closebrowse" finished-at="2024-03-10T14:50:28Z" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
+      </class> <!-- com.bank.qa.testcases.LoginPageTest -->
+      <class name="com.bank.qa.testcases.OpenAccountTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.OpenAccountTest@e1de817]" started-at="2024-03-10T14:50:56Z" name="setup" finished-at="2024-03-10T14:50:59Z" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createAccount()[pri:3, instance:com.bank.qa.testcases.OpenAccountTest@e1de817]" started-at="2024-03-10T14:50:59Z" name="createAccount" finished-at="2024-03-10T14:51:01Z" duration-ms="1887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.OpenAccountTest@e1de817]" started-at="2024-03-10T14:51:01Z" name="closebrowse" finished-at="2024-03-10T14:51:01Z" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
+      </class> <!-- com.bank.qa.testcases.OpenAccountTest -->
+      <class name="com.bank.qa.testcases.CustomerslistTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@52102734]" started-at="2024-03-10T14:50:47Z" name="setup" finished-at="2024-03-10T14:50:53Z" duration-ms="5846" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 2.901
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03056b222a12be53dd03e187cc1e6b75, get {url=https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57555/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03056b222a12be53dd03e187cc1e6b75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 2.901
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03056b222a12be53dd03e187cc1e6b75, get {url=https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57555/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03056b222a12be53dd03e187cc1e6b75
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at com.bank.qa.base.TestBase.initialization(TestBase.java:50)
+	at com.bank.qa.testcases.CustomerslistTest.setup(CustomerslistTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearch()[pri:0, instance:com.bank.qa.testcases.CustomerslistTest@52102734]" started-at="2024-03-10T14:50:53Z" name="verifySearch" finished-at="2024-03-10T14:50:53Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 2.901
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03056b222a12be53dd03e187cc1e6b75, get {url=https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57555/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03056b222a12be53dd03e187cc1e6b75]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 2.901
+  (Session info: chrome=122.0.6261.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03056b222a12be53dd03e187cc1e6b75, get {url=https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57555/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03056b222a12be53dd03e187cc1e6b75
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:309)
+	at com.bank.qa.base.TestBase.initialization(TestBase.java:50)
+	at com.bank.qa.testcases.CustomerslistTest.setup(CustomerslistTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearch -->
+      </class> <!-- com.bank.qa.testcases.CustomerslistTest -->
+      <class name="com.bank.qa.testcases.AddCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@5939a379]" started-at="2024-03-10T14:50:41Z" name="setup" finished-at="2024-03-10T14:50:45Z" duration-ms="3356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyManagerLogin()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@5939a379]" started-at="2024-03-10T14:50:45Z" name="verifyManagerLogin" finished-at="2024-03-10T14:50:47Z" duration-ms="2496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyManagerLogin -->
+        <test-method is-config="true" signature="closebrowse()[pri:0, instance:com.bank.qa.testcases.AddCustomerTest@5939a379]" started-at="2024-03-10T14:50:47Z" name="closebrowse" finished-at="2024-03-10T14:50:47Z" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowse -->
       </class> <!-- com.bank.qa.testcases.AddCustomerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

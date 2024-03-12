@@ -16,7 +16,7 @@ public class BankManagerLoginPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	 //elements
+	//
 		@FindBy(xpath = "//button[contains(text(),'Add Customer')]")
 		WebElement addCustomerTab;
 		
@@ -27,7 +27,7 @@ public class BankManagerLoginPage extends TestBase{
 		WebElement customersTab;
 
 
-	//Actions
+
 		
 		public AddCustomerPage clickaddCustomerTab() throws IOException
 		{

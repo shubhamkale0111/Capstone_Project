@@ -18,7 +18,7 @@ public class OpenAccountPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	//elements
+	
 	@FindBy(xpath = "(//select)[1]")
 	WebElement customerDropdown;
 	
@@ -28,7 +28,7 @@ public class OpenAccountPage extends TestBase {
 	@FindBy(xpath = "//button[contains(.,'Process')]")
 	WebElement processBtn;
 	
-	//Actions     
+	     
 	
 	public void selectCustomer()
 	{

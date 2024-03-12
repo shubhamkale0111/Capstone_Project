@@ -3,6 +3,7 @@ package com.bank.qa.testcases;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -36,15 +37,24 @@ public class AddCustomerTest extends TestBase {
 		
 		manager.clickaddCustomerTab();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-		addCustomer.enterFName(prop.getProperty("FirstName"));
-		addCustomer.enterLName(prop.getProperty("LastName"));
-		addCustomer.enterPCode(prop.getProperty("Postcode"));
+		addCustomer.EnterFirstName(prop.getProperty("FirstName"));//getting first Name of customer from config
+		addCustomer.EnterLastName(prop.getProperty("LastName"));//getting last name of customer from config
+		addCustomer.EnterPostCode(prop.getProperty("Postcode"));//getting post code of customer from config
 		
-		addCustomer.clickaddCustBtn();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		addCustomer.clickaddCustBtn(); // click on add button
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+		
 		String alertMsg = addCustomer.acceptAlert();
 		System.out.println(alertMsg);
+		
 	}
+	// close browser after complete of operation
+	@AfterMethod
+	public void closebrowse() {
+		driver.quit();
+	}
+	
 }

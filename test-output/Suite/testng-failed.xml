@@ -3,12 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
-      <class name="com.bank.qa.testcases.WithdrawTest">
+      <class name="com.bank.qa.testcases.CustomerslistTest">
         <methods>
-          <include name="DepositMoney"/>
           <include name="setup"/>
+          <include name="verifySearch"/>
+          <include name="closebrowse"/>
         </methods>
-      </class> <!-- com.bank.qa.testcases.WithdrawTest -->
+      </class> <!-- com.bank.qa.testcases.CustomerslistTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
